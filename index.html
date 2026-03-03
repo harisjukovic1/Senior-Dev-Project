@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bifocus Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="phone">
+      <header class="status-bar">
+        <span>9:41</span>
+        <span class="battery"></span>
+      </header>
+
+      <section class="screen screen-1 active" data-screen="1">
+        <div class="hero-icon camera"></div>
+        <h1>Welcome to Bifocus</h1>
+        <p class="subtitle">Find frames that perfectly match your face shape using AI</p>
+
+        <article class="card privacy-card">
+          <h2>Privacy First</h2>
+          <p>Your photo is processed on your device. We don't store or share your facial data.</p>
+        </article>
+
+        <button class="btn btn-primary next-btn" data-next="2">Get Started</button>
+      </section>
+
+      <section class="screen screen-2" data-screen="2">
+        <h1>Add Your Photo</h1>
+        <p class="subtitle">Choose how you'd like to provide your photo</p>
+
+        <button class="card option option-primary next-btn" data-next="3">
+          <span class="icon camera-small"></span>
+          <span>
+            <strong>Take a Photo</strong>
+            <small>Use your camera now</small>
+          </span>
+        </button>
+
+        <button class="card option">
+          <span class="icon upload"></span>
+          <span>
+            <strong>Upload Photo</strong>
+            <small>Choose from gallery</small>
+          </span>
+        </button>
+
+        <article class="card tips">
+          <h2>Photo Tips:</h2>
+          <ul>
+            <li>Remove glasses for best results</li>
+            <li>Face the camera directly</li>
+            <li>Use good lighting</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="screen screen-3" data-screen="3">
+        <div class="scan-frame">
+          <div class="face-outline"></div>
+          <div class="corners"></div>
+        </div>
+        <p class="subtitle">Position your face in the frame</p>
+        <button class="btn btn-light">Capture Photo</button>
+      </section>
+
+      <footer class="home-indicator"></footer>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
